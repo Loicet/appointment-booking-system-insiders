@@ -1,18 +1,18 @@
-import React from "react";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/home";
+import BookDoctor from "./pages/BookDoctor";
 
-const Navbar = () => {
+
+
+function App() {
   return (
-    <nav className="bg-teal-600 text-white flex justify-between items-center px-8 py-4 shadow-md">
-      <h1 className="text-2xl font-bold">KigaliClinic</h1>
-      <ul className="flex gap-8 text-lg">
-        <li>Home</li>
-        <li>Book</li>
-        <li>Chat</li>
-        <li>Dashboard</li>
-      </ul>
-    </nav>
+    <>
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
   );
-};
+}
 
-export default Navbar;
+export default App;
