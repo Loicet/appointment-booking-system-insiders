@@ -5,13 +5,13 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 // Layouts
 import MainLayout from "./layout/MainLayout";
-import PatientLayout from "./layout/patientLayout";
+import PatientLayout from "./layout/PatientLayout";
 
 // Pages
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import BookDoctor from "./pages/BookDoctor";
