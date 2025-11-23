@@ -1,6 +1,6 @@
 const AIChatbot = () => {
   return (
-    <div className="px-6 py-8 max-w-3xl mx-auto">
+    <div className="min-h-screen px-6 py-8 max-w-3xl mx-auto">
       <h1 className="text-3xl font-semibold mb-6">AI Chatbot</h1>
 
       <div className="bg-white rounded-lg shadow p-6 flex flex-col">
