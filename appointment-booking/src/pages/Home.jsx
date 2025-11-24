@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { motion } from "framer-motion";
 void motion;
 import { 
@@ -64,9 +65,11 @@ const Home = () => {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4">
+              <Link to="/login">
               <button className="bg-teal-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-800 hover:-translate-y-1 transition-all shadow-xl shadow-teal-900/10 flex items-center justify-center gap-2">
                 Book Now <ArrowRight size={20} />
               </button>
+              </Link>
               <button className="bg-white text-slate-700 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:border-slate-400 hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
                 <Video size={20} /> Video Consult
               </button>
@@ -287,9 +290,11 @@ const Home = () => {
               <p className="text-slate-400 text-xl mb-12 max-w-2xl mx-auto">
                 Join 10,000+ Rwandans who have switched to a smarter, faster way to see a doctor.
               </p>
+              <Link to="/Signup">
               <button className="bg-teal-500 text-slate-900 hover:bg-teal-400 px-10 py-5 rounded-2xl font-bold text-xl transition transform hover:scale-105">
                 Get Started for Free
               </button>
+              </Link>
               <p className="mt-6 text-slate-500 text-sm">No credit card required for sign up.</p>
             </div>
           </motion.div>

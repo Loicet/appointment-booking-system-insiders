@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-
+import doctorImage from "../assets/doctorimage.jpeg";
 const Login = () => {
   const { login } = useAuth();
   const [form, setForm] = useState({ email: "", password: "", role: "patient" });
@@ -34,11 +34,8 @@ const Login = () => {
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left: Illustration / marketing */}
         <div className="hidden md:flex flex-col gap-6 px-6">
-          <img
-            src="https://cdn.pixabay.com/photo/2016/03/31/20/56/doctor-1295567_1280.png"
-            alt="doctor"
-            className="w-full max-w-sm mx-auto"
-          />
+      
+          <img src={doctorImage} alt="Doctor" className="relative z-10 rounded-3xl overflow-hidden shadow-2xl w-3/4 mx-auto h-[250px] lg:h-[300px]"/>
           <div>
             <h2 className="text-3xl font-bold text-teal-700">Welcome back to KigaliClinic</h2>
             <p className="mt-2 text-gray-600">
